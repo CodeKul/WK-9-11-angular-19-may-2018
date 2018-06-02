@@ -1,6 +1,9 @@
-export class Car {
+import { CarMapper } from './../needed-ts/cars';
+
+export abstract class Car implements CarMapper {
 
     private nm = 'android'
+    GPS_TYPE = 'satellite'
 
     constructor(
         private age = 10
@@ -10,9 +13,21 @@ export class Car {
     prntAg() {
         console.log(`Your age is ${this.age}`)
     }
+
+    speedUp() {
+
+    }
+
+    blowHorn() {
+
+    }
+
+    geoFence() {
+
+    }
 }
 
-let byRm = 'android'
+// let byRm = 'android'
 
-var cr = new Car()
+// var cr = new Car()
 
