@@ -17,6 +17,16 @@
 <div class="row">
   <div class="col-md-12">
     <input type="button" value="Okay" (click)="clkM()">
-    <input type="button" value="Okay" (click)="clkM()">
+    <input type="button" value="Okay" (click)="tgl = !tgl">{{tgl}}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="text" [(ngModel)]="myNm">
+  </div>
+</div>
+<div class="row">
+  <div class="jumbotron">
+    {{myNm}}
   </div>
 </div>

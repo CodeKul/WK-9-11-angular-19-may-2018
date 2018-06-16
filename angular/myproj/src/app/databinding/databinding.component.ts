@@ -9,6 +9,8 @@ export class DatabindingComponent implements OnInit {
 
   wht = 'interpolation binding'
   ty = 'text'
+  tgl = false
+  myNm = ''
 
   constructor() { }
 
