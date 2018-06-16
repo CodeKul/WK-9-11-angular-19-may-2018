@@ -1,0 +1,7 @@
+h4 {
+    border: 1px solid red
+}
+
+::ng-deep app-code-alert, app-jumbo p {
+    border: 1px solid blue
+}
