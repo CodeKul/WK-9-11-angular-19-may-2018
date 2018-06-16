@@ -26,7 +26,21 @@
   </div>
 </div>
 <div class="row">
-  <div class="jumbotron">
+  <div [class.jumbotron]="tgl">
     {{myNm}}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <app-rating 
+      [ttl]="'Feedback rating'" 
+      (stClk)="onStrClk($event)"></app-rating>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <app-rating 
+      [ttl]="'Food Survey'" 
+      (stClk)="onStrClk($event)"></app-rating>
   </div>
 </div>

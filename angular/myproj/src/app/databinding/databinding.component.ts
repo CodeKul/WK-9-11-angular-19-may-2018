@@ -24,4 +24,8 @@ export class DatabindingComponent implements OnInit {
   clkM() {
     console.log(`Changed by click`)
   }
+
+  onStrClk(rt : number) {
+    console.log(`Rating is ${rt}`)
+  }
 }
