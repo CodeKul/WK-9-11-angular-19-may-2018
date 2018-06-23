@@ -12,6 +12,8 @@ import { HdrComponent } from './databinding/intr-com-cmn/hdr.component';
 import { MkrComponent } from './databinding/intr-com-cmn/mkr.component';
 import { LoclRefsComponent } from './locl-refs/locl-refs.component';
 import { CmpLyfComponent } from './cmp-lyf/cmp-lyf.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { MyAttrDirective } from './directives/my-attr.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { CmpLyfComponent } from './cmp-lyf/cmp-lyf.component';
     HdrComponent,
     MkrComponent,
     LoclRefsComponent,
-    CmpLyfComponent
+    CmpLyfComponent,
+    DirectivesComponent,
+    MyAttrDirective
   ],
   imports: [
     BrowserModule,
