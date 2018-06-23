@@ -10,6 +10,8 @@ import { RatingComponent } from './databinding/rating.component';
 import { IntrComCmnComponent } from './databinding/intr-com-cmn/intr-com-cmn.component';
 import { HdrComponent } from './databinding/intr-com-cmn/hdr.component';
 import { MkrComponent } from './databinding/intr-com-cmn/mkr.component';
+import { LoclRefsComponent } from './locl-refs/locl-refs.component';
+import { CmpLyfComponent } from './cmp-lyf/cmp-lyf.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MkrComponent } from './databinding/intr-com-cmn/mkr.component';
     RatingComponent,
     IntrComCmnComponent,
     HdrComponent,
-    MkrComponent
+    MkrComponent,
+    LoclRefsComponent,
+    CmpLyfComponent
   ],
   imports: [
     BrowserModule,

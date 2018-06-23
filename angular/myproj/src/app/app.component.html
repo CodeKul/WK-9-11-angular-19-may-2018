@@ -15,6 +15,13 @@
     </div>
   </div> -->
 
-  <app-databinding></app-databinding>
+  <!-- <app-databinding></app-databinding> -->
+  <app-locl-refs>
+    <div class="jumbotron" #jmb>
+      Hey this is jumbo
+    </div>
+  </app-locl-refs>
 
+  <app-cmp-lyf *ngIf="tgl" [myIp]="'android'"></app-cmp-lyf>
+  <input type="button" value="Okay" class="btn" (click)="myClk()">
 </div>
