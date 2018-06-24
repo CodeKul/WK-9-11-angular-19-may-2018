@@ -1,10 +1,11 @@
-import { Directive, HostBinding, HostListener } from '@angular/core';
+import { Directive, HostBinding, HostListener, Input } from '@angular/core';
 
 @Directive({
   selector: '[myAtt]'
 })
 export class MyAttrDirective {
 
+  @Input('myAtt')
   @HostBinding('style.width')
   wdt : string
 

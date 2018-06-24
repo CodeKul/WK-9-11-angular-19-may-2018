@@ -10,6 +10,45 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    <input type="text" myAtt>
+    <input type="text" [myAtt]="'200px'">
   </div>
+</div>
+<div class="row" *ngIf="false">
+  <div class="col-md-12">
+    <input type="text" [myAtt]="'200px'">
+  </div>
+</div>
+<div class="row">
+  <ng-template [ngIf]="true">
+    <div class="col-md-12">
+      <input type="text" [myAtt]="'200px'">
+    </div>
+  </ng-template>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <ul>
+      <li *ngFor="let mb of mobs;let ind = index;">{{ind}} => {{mb}}</li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div [ngSwitch]="num">
+      <div *ngSwitchCase="1" >One</div>
+      <div *ngSwitchCase="2" >Two</div>
+      <div *ngSwitchCase="3" >Three</div>
+      <div *ngSwitchDefault >Lost</div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div *unless="true">This is showing</div>
+  </div>
+</div>
+<div class="row">
+  <ng-template [unless]="false">
+
+  </ng-template>
 </div>

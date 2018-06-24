@@ -14,6 +14,7 @@ import { LoclRefsComponent } from './locl-refs/locl-refs.component';
 import { CmpLyfComponent } from './cmp-lyf/cmp-lyf.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { MyAttrDirective } from './directives/my-attr.directive';
+import { MyStrDirective } from './directives/my-str.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MyAttrDirective } from './directives/my-attr.directive';
     LoclRefsComponent,
     CmpLyfComponent,
     DirectivesComponent,
-    MyAttrDirective
+    MyAttrDirective,
+    MyStrDirective
   ],
   imports: [
     BrowserModule,

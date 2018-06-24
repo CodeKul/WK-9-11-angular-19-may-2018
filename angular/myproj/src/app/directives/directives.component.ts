@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivesComponent implements OnInit {
 
+  num = 1
+  mobs = [
+    'Android',
+    'iOS',
+    'Rim',
+    'PalmOs',
+    'Web OS',
+    'RTOS',
+    'Mint',
+    'Kali'
+  ]
   constructor() { }
 
   ngOnInit() {
