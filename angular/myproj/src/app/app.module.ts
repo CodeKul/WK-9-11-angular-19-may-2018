@@ -1,6 +1,8 @@
+import { DataService } from './services/data.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'
 import { NgModule } from '@angular/core';
+import { Ng2TableModule } from 'ng2-table/ng2-table';
 
 import { AppComponent } from './app.component';
 import { CodeAlertComponent } from './code-alert/code-alert.component';
@@ -15,6 +17,9 @@ import { CmpLyfComponent } from './cmp-lyf/cmp-lyf.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { MyAttrDirective } from './directives/my-attr.directive';
 import { MyStrDirective } from './directives/my-str.directive';
+import { ThirdPartyComponent } from './third-party/third-party.component';
+import { ServicesComponent } from './services/services.component';
+import { DataRecComponent } from './services/data-rec.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +35,16 @@ import { MyStrDirective } from './directives/my-str.directive';
     CmpLyfComponent,
     DirectivesComponent,
     MyAttrDirective,
-    MyStrDirective
+    MyStrDirective,
+    ThirdPartyComponent,
+    ServicesComponent,
+    DataRecComponent
   ],
+  providers: [DataService],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    Ng2TableModule
   ],
   bootstrap: [AppComponent]
 })
