@@ -1,5 +1,9 @@
 import { EventEmitter } from '@angular/core';
+import { Injectable } from '@angular/core';
 
+@Injectable({
+  providedIn: 'root'
+})
 export class DataService {
 
   private cntr: number = 0
@@ -16,6 +20,8 @@ export class DataService {
   }
 
   onMove(cb: (cntr: number) => void) {
-    this.cntrEm.subscribe(cntr => cb(cntr))
+    this.cntrEm.subscribe(function (cntr) {
+      cb(cntr)
+    })
   }
 }

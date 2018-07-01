@@ -21,5 +21,4 @@ export class DataRecComponent implements OnInit {
   ngOnInit() {
     this.data.onMove(cntr => this.cntr = cntr)
   }
-
 }
