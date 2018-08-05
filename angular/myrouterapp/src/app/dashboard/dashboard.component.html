@@ -16,17 +16,18 @@
           <li class="nav-item">
             <a class="nav-link active" href="#">
               <span data-feather="home"></span>
-              Dashboard - {{dhNm}}<span class="sr-only">(current)</span>
+              Dashboard - {{dhNm}}
+              <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" [routerLink]="['nrml']">
               <span data-feather="file"></span>
               Orders
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" [routerLink]="['dtld']">
               <span data-feather="shopping-cart"></span>
               Products
             </a>
@@ -105,6 +106,7 @@
 
       <h2>Section title</h2>
       <div class="table-responsive">
+        <router-outlet></router-outlet>
         <table class="table table-striped table-sm">
           <thead>
             <tr>
