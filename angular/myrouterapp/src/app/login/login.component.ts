@@ -15,7 +15,11 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  onLogin() {
-    this.router.navigate(['dash'])
+  onLogin(dhNm : string) {
+    this.router.navigate(['dash', dhNm], {
+      queryParams : {
+        tm : 9878765756
+      }
+    })
   }
 }
