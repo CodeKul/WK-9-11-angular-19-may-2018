@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-sm-8">
+        <h4 class="page-header">Template Driven Form</h4>
+        <form role="form" (ngSubmit)="mySub(myFrm)" #myFrm="ngForm">
+            <div class="form-group float-label-control">
+                <label for="">Username</label>
+                <input type="text" class="form-control" placeholder="Username" name="usNm" required ngModel>
+            </div>
+            <div class="form-group float-label-control">
+                <label for="">Password</label>
+                <input type="password" class="form-control" placeholder="Password" name="pass" required ngModel>
+            </div>
+            <div class="form-group float-label-control">
+                <label for="">Email Address</label>
+                <input type="email" class="form-control" placeholder="What's your email address?" required 
+                pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+                name="eml" ngModel>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Okay" [disabled]="!myFrm.valid">
+            </div>
+        </form>
+    </div>
+</div>
