@@ -11,3 +11,4 @@ arr.forEach(function (el, ind) {
 })
 
 arr.forEach((el, ind) => console.log(`Element is ${el} and Index is ${ind}`))
+
