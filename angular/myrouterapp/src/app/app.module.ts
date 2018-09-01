@@ -1,3 +1,4 @@
+import { MyHttpModule } from './http/http.module';
 import { MyFormsModule } from './forms/forms.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { LoginModule } from './login/login.module';
@@ -20,7 +21,8 @@ import { AppComponent } from './app.component';
     LoginModule,
     RegistratioonModule,
     DashboardModule,
-    MyFormsModule
+    MyFormsModule,
+    MyHttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

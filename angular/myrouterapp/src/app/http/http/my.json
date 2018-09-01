@@ -1,0 +1,27 @@
+{
+    "pc": {
+        "label": "PC",
+        "count": 0,
+        "peak24": 0
+    },
+    "ps3": {
+        "label": "PS3",
+        "count": 0,
+        "peak24": 0
+    },
+    "xbox": {
+        "label": "XBOX360",
+        "count": 0,
+        "peak24": 0
+    },
+    "xone": {
+        "label": "XBOXONE",
+        "count": 0,
+        "peak24": 0
+    },
+    "ps4": {
+        "label": "PS4",
+        "count": 0,
+        "peak24": 0
+    }
+}

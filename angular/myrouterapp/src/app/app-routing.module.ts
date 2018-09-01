@@ -1,3 +1,4 @@
+import { HttpComponent } from './http/http/http.component';
 import { TDComponent } from './forms/forms/td.component';
 import { FormsComponent } from './forms/forms/forms.component';
 import { DtldComponent } from './dashboard/dtld.component';
@@ -26,7 +27,8 @@ const routes: Routes = [
     component: DashboardComponent,
     children: dashRoutes
   },
-  { path: 'forms', component: FormsComponent, children : formsRoutes }
+  { path: 'forms', component: FormsComponent, children : formsRoutes },
+  { path : 'http', component : HttpComponent}
 ];
 
 @NgModule({
